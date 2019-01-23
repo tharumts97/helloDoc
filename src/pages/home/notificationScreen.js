@@ -7,20 +7,20 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
-export default class Second extends Component{
+export default class NotificationScreen extends Component{
     render() {
         return (
             <View>
-                <Text> This is second screen</Text>
+                <Text> This is fourth screen</Text>
             </View>
         )
     }
 }
 
-Second.navigationOptions = {
+NotificationScreen.navigationOptions = {
     tabBarIcon : ({tintColor, focused}) => (
         <Icon 
-            name={focused ? 'md-flame' : 'ios-flame'}
+            name={focused ? 'ios-notifications-outline' : 'ios-notifications'}
             size={28}
             color={tintColor}
         />

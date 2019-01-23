@@ -3,7 +3,8 @@ import {
     View,
     Text,
     StyleSheet,
-    StatusBar
+    StatusBar,
+    TouchableOpacity
 } from 'react-native'
 
 import {createAppContainer} from 'react-navigation'
@@ -17,11 +18,13 @@ export default class App extends Component{
         return (
             <View style={{flex : 1}}>
             <StatusBar
-                backgroundColor='red'
+                backgroundColor='#19334d'
                 barStyle='light-content'
             />
                 <View style = {styles.header}>
-                    <Icon name='ios-camera' size={28} color='white' />
+                    <TouchableOpacity>
+                        <Icon name='md-contact' size={28} color='white' />
+                    </TouchableOpacity>
                     <Icon name='ios-menu' size={28} color='white' />
                 </View>
                 <AppIndex/>
@@ -38,7 +41,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent : 'space-between',
-        backgroundColor : 'red',
+        backgroundColor : '#19334d',
         paddingHorizontal: 10,
         paddingTop:5
     }

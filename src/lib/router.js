@@ -1,24 +1,31 @@
 import React from 'react';
 import { createMaterialTopTabNavigator} from 'react-navigation';
 
+//importing pages
 import HomeScreen from '../pages/home';
-import Second from '../pages/home/second';
-import Third from '../pages/home/third'
+import AppointmentScreen from '../pages/home/appointmentScreen';
+import PrescriptionScreen from '../pages/home/PrescriptionScreen';
+import NotificationScreen from '../pages/home/notificationScreen';
+import ChatScreen from '../pages/home/chatScreen';
 
 const AppNavigator = createMaterialTopTabNavigator(
     {
+        //connecting pages
         Home: HomeScreen,
-        Second: Second,
-        Third: Third
+        Second: AppointmentScreen,
+        Third: PrescriptionScreen,
+        Fourth: NotificationScreen,
+        Fifth: ChatScreen,
     },
     {
+        //tab styling
         tabBarOptions: {
             activeTintColor: 'white',
-            inactiveTintColor: 'tomato',
+            inactiveTintColor: '#b3cce6',
             showIcon : true,
             showLabel: false,
             style: {
-                backgroundColor : 'red'
+                backgroundColor : '#204060'
             }
         },
         

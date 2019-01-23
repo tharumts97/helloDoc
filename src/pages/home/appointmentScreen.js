@@ -7,20 +7,20 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
-export default class Third extends Component{
+export default class AppointmentScreen extends Component{
     render() {
         return (
             <View>
-                <Text> This is Third Screen</Text>
+                <Text> This is second screen</Text>
             </View>
         )
     }
 }
 
-Third.navigationOptions = {
+AppointmentScreen.navigationOptions = {
     tabBarIcon : ({tintColor, focused}) => (
         <Icon 
-            name={focused ? 'md-flash' : 'ios-flash'}
+            name={focused ? 'md-calendar' : 'ios-calendar'}
             size={28}
             color={tintColor}
         />

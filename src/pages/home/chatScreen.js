@@ -7,20 +7,20 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
-export default class HomeScreen extends Component{
+export default class ChatScreen extends Component{
     render() {
         return (
             <View>
-                <Text> This is Home Screen</Text>
+                <Text> This is fifth screen</Text>
             </View>
         )
     }
 }
 
-HomeScreen.navigationOptions = {
+ChatScreen.navigationOptions = {
     tabBarIcon : ({tintColor, focused}) => (
         <Icon 
-            name={focused ? 'md-home' : 'ios-home'}
+            name={focused ? 'md-phone-portrait' : 'ios-phone-portrait'}
             size={28}
             color={tintColor}
         />

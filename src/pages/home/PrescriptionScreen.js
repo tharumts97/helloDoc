@@ -7,20 +7,20 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
-export default class HomeScreen extends Component{
+export default class PrescriptionScreen extends Component{
     render() {
         return (
             <View>
-                <Text> This is Home Screen</Text>
+                <Text> This is Third Screen</Text>
             </View>
         )
     }
 }
 
-HomeScreen.navigationOptions = {
+PrescriptionScreen.navigationOptions = {
     tabBarIcon : ({tintColor, focused}) => (
         <Icon 
-            name={focused ? 'md-home' : 'ios-home'}
+            name={focused ? 'ios-list-box' : 'ios-list-box'}
             size={28}
             color={tintColor}
         />
