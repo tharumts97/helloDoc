@@ -1,12 +1,13 @@
 import React from 'react';
-import { createMaterialTopTabNavigator} from 'react-navigation';
+import { createMaterialTopTabNavigator, StackNavigator} from 'react-navigation';
 
-//importing pages
+//importing the screens
 import HomeScreen from '../pages/home';
 import AppointmentScreen from '../pages/home/appointmentScreen';
 import PrescriptionScreen from '../pages/home/PrescriptionScreen';
 import NotificationScreen from '../pages/home/notificationScreen';
 import ChatScreen from '../pages/home/chatScreen';
+
 
 const AppNavigator = createMaterialTopTabNavigator(
     {
@@ -32,4 +33,4 @@ const AppNavigator = createMaterialTopTabNavigator(
     }
 )
 
-export default AppNavigator
+export default AppNavigator;

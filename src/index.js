@@ -9,6 +9,7 @@ import {
 
 import {createAppContainer} from 'react-navigation'
 import AppNavigator from './lib/router'
+import StackNavi from './lib/patientStackNav'
 import Icon from 'react-native-vector-icons/Ionicons'
 
 const AppIndex = createAppContainer(AppNavigator)
