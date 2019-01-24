@@ -20,6 +20,16 @@ export default class RadioButton extends Component{
                 color:'green',
                 value:"Ent surgeon"
             },
+            {
+                label:'Doctor 3',
+                color:'green',
+                value:"Physician"
+            },
+            {
+                label:'Doctor 4',
+                color:'green',
+                value:"Ent surgeon"
+            },
         ]
     };
        // update state

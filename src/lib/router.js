@@ -7,16 +7,19 @@ import AppointmentScreen from '../pages/home/appointmentScreen';
 import PrescriptionScreen from '../pages/home/PrescriptionScreen';
 import NotificationScreen from '../pages/home/notificationScreen';
 import ChatScreen from '../pages/home/chatScreen';
-
+import CurrentStateScreen from '../pages/home/currentStateScreen';
+import AppDatePicker from '../pages/Appointment/appointmentPickDate';
 
 const AppNavigator = createMaterialTopTabNavigator(
     {
         //connecting pages
         Home: HomeScreen,
-        Second: AppointmentScreen,
+        Second: AppDatePicker, //AppointmentScreen,
         Third: PrescriptionScreen,
-        Fourth: NotificationScreen,
-        Fifth: ChatScreen,
+        Fourth:CurrentStateScreen,
+        Fifth: NotificationScreen,
+        Sixth: ChatScreen,
+        
     },
     {
         //tab styling

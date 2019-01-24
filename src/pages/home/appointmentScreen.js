@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -22,12 +23,13 @@ export default class AppointmentScreen extends Component {
 
     render() {
 
-        const { parent, headText, drpView, drpDown, radText, modalView } = style
+        const { parent, headText, drpView, drpDown, radText, modalView,
+            iconView, iconimg,radView } = style
 
         var data = [["All", "Cardiologist", "Surgeon", "Physician", "Psychiastrist"]];
         return (
             <View style={parent}>
-                <View>
+                <View style={drpView}>
                     <Text style={headText}>Search Doctor</Text>
                     <View style={{ height: 64 }} />
                     <DropdownMenu
@@ -46,14 +48,21 @@ export default class AppointmentScreen extends Component {
                     >
                     </DropdownMenu>
                 </View>
-                <View style={drpView}>
+                {/*
+                <View style={radView}>
                     <Text style={radText}>Available Doctors</Text>
                     <RadioButton />
                     <View style={modalView}>
                         <ModalTester />
                     </View>
-                </View>
-
+                    
+                    
+        </View>*/}
+                <View style={iconView}>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("viewpres")}>
+                            <Icon name='md-arrow-dropright-circle' size={40} style={iconimg} />
+                        </TouchableOpacity>
+                        </View>
             </View>
 
         )

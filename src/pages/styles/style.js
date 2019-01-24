@@ -109,19 +109,24 @@ export default StyleSheet.create({
         fontSize: 28,
         textAlign: 'center',
         alignItems: 'flex-start',
-        marginTop: 50
+        marginTop: 30
     },
 
+    iconimg:{
+        color: '#19334d',
+    },
     
     iconimgclose: { //styling for close icon
         color: '#19334d',
         backgroundColor:'red',
-        marginLeft:50
+        marginLeft:90,
+        flexDirection:'column-reverse'
     },
 
     iconView: {
         flex: 1,
-        flexDirection: 'row-reverse'
+        alignItems:'baseline',
+        marginLeft:350
     },
 
     container: {
@@ -137,6 +142,10 @@ export default StyleSheet.create({
 
     drpView: { //styling for dropdown menu View
         flex: 1,
+    },
+
+    radView:{
+        flex:1
     },
 
     drpDown: { //styling for Dropdown menu
@@ -156,7 +165,8 @@ export default StyleSheet.create({
 
     modalView:{ //styling for View of modal
         flex:1,
-        alignItems:'center'
+        alignItems:'center',
+        marginTop:100
     }
 
 

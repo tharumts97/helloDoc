@@ -11,6 +11,7 @@
     "react": "16.6.0-alpha.8af6728",
     "react-moment": "^0.8.4",
     "react-native": "0.57.4",
+    "react-native-datepicker": "^1.7.2",
     "react-native-dropdown-menu": "^2.0.0",
     "react-native-gesture-handler": "^1.0.12",
     "react-native-modal": "^7.0.2",
