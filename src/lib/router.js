@@ -1,3 +1,4 @@
+//Tab Navigator
 import React from 'react';
 import { createMaterialTopTabNavigator, StackNavigator} from 'react-navigation';
 
@@ -14,7 +15,7 @@ const AppNavigator = createMaterialTopTabNavigator(
     {
         //connecting pages
         Home: HomeScreen,
-        Second: AppDatePicker, //AppointmentScreen,
+        Second: AppointmentScreen,
         Third: PrescriptionScreen,
         Fourth:CurrentStateScreen,
         Fifth: NotificationScreen,
